@@ -1,0 +1,17 @@
+{
+  "name": "mercuryui",
+  "version": "1.0.0",
+  "description": "A plugin for Tailwind CSS, based on predesigned component classes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tailwindcss",
+    "frontend",
+    "component",
+    "ui"
+  ],
+  "author": "Darud Lingilien",
+  "license": "MIT"
+}
