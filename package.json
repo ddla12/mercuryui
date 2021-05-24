@@ -6,11 +6,27 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ddla12/mercuryui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ddla12/mercuryui/issues"
+  },
+  "homepage": "https://github.com/ddla12/mercuryui#readme",
+  "devDependencies": {
+    "postcss": "^8.1.10",
+    "alpinejs": "^2.8.0",
+    "tailwindcss": "^2.0.1"
+  },
   "keywords": [
     "tailwindcss",
     "frontend",
     "component",
-    "ui"
+    "ui",
+    "design",
+    "postcss",
+    "theming"
   ],
   "author": "Darud Lingilien",
   "license": "MIT"
