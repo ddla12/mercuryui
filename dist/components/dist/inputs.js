@@ -12,7 +12,8 @@ module.exports = {
         "@apply w-full p-4 py-2": {},
     },
     ".input-default": {
-        "@apply transition duration-500 ease-in-out rounded-xl border-3 outline-none focus:ring focus:outline-none font-bold shadow-lg placeholder-opacity-75": {},
+        "@apply transition duration-500 ease-in-out rounded-xl border-3 outline-none focus:ring focus:outline-none font-bold shadow-lg placeholder-opacity-75":
+            {},
     },
     ".input .textarea": {
         "@apply resize-none": {},
@@ -20,11 +21,12 @@ module.exports = {
     /**
      *  Checkbox input
      */
-     ".checkbox": {
+    ".checkbox": {
         "@apply flex flex-row w-full gap-x-4": {},
     },
-     ".checkbox > .body": {
-        "@apply border-2 lg:w-8 lg:h-8 w-6 h-6 transition duration-200 ease-in-out text-white relative": {},
+    ".checkbox > .body": {
+        "@apply border-2 lg:w-8 lg:h-8 w-6 h-6 transition duration-200 ease-in-out text-white relative":
+            {},
     },
     ".checkbox > .label": {
         "@apply text-sm font-extrabold": {},
@@ -35,9 +37,10 @@ module.exports = {
     ".checkbox > input[type = 'checkbox']": {
         "@apply absolute lg:w-8 lg:h-8 w-6 h-6 opacity-0 cursor-pointer": {},
     },
-    ".checkbox > .body > input[type='checkbox']:checked + svg, input[type = 'radio']:checked + svg": {
-        "@apply block": {},
-    },
+    ".checkbox > .body > input[type='checkbox']:checked + svg, input[type = 'radio']:checked + svg":
+        {
+            "@apply block": {},
+        },
     ".color-name": {
         "@apply text-lg font-semibold my-auto": {},
     },
@@ -55,13 +58,14 @@ module.exports = {
     },
     ".toggle > .body > input[type = 'checkbox']": {
         "@apply absolute opacity-0 z-10 w-14 h-8 cursor-pointer": {},
-    }, 
+    },
     ".dot": {
-        "@apply absolute top-0.5 left-1 w-6 h-6 rounded-full transition duration-150 ease-out": {},
+        "@apply absolute top-0.5 left-1 w-6 h-6 rounded-full transition duration-150 ease-out":
+            {},
     },
     "input[type = 'checkbox']:checked + .dot": {
         "@apply filter brightness-150": {},
-        "transform": "translateX(85%)",
+        transform: "translateX(85%)",
     },
     /**
      *  Radio component
@@ -76,7 +80,8 @@ module.exports = {
         "@apply w-6 h-6 opacity-0 absolute cursor-pointer": {},
     },
     "input[type = 'radio'] + svg": {
-        "@apply absolute w-5 h-5 hidden transition duration-200 ease-in-out": {},
+        "@apply absolute w-5 h-5 hidden transition duration-200 ease-in-out":
+            {},
     },
     ".radio > .label": {
         "@apply text-base select-none": {},

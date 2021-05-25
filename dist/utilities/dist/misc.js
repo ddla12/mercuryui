@@ -12,7 +12,8 @@ module.exports = {
         "@apply flex flex-row-reverse": {},
     },
     ".clickeable": {
-        "@apply filter active:brightness-90 transition-transform transform active:scale-110 focus:outline-none cursor-pointer": {},
+        "@apply filter active:brightness-90 transition-transform transform active:scale-110 focus:outline-none cursor-pointer":
+            {},
     },
     ".has-tooltip": {
         "@apply inline-flex cursor-default relative": {},
@@ -73,20 +74,20 @@ module.exports = {
     },
     ".ghost": {
         "@apply transition-colors duration-150 ease-in-out": {},
-     },
-     ".ghost-outline": {
-         "@apply ghost border-2 hover:border-0": {},
-      },
-     ".pill": {
-         "@apply text-sm px-3 shadow-sm rounded-full": {},
-     },
-     "image-fill": {
+    },
+    ".ghost-outline": {
+        "@apply ghost border-2 hover:border-0": {},
+    },
+    ".pill": {
+        "@apply text-sm px-3 shadow-sm rounded-full": {},
+    },
+    "image-fill": {
         "@apply object-fill size-full": {},
-     },
-     "image-center": {
+    },
+    "image-center": {
         "@apply object-none object-center": {},
-     },
-     ".flippable-icon": {
+    },
+    ".flippable-icon": {
         "@apply h-6 w-6 transform duration-150 ease-in-out": {},
     },
-}
+};

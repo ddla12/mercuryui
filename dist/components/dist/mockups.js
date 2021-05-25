@@ -6,7 +6,8 @@ module.exports = {
         "@apply absolute w-full top-0 f-row justify-center -mt-2": {},
     },
     ".phone .headbar .body": {
-        "@apply rounded-xl w-28 h-6 f-row gap-x-2 justify-center items-center": {},
+        "@apply rounded-xl w-28 h-6 f-row gap-x-2 justify-center items-center":
+            {},
     },
     "#camera": {
         "@apply h-2 w-2 rounded-full": {},
@@ -24,7 +25,8 @@ module.exports = {
         "@apply rounded-lg overflow-hidden flex f-col": {},
     },
     ".titlebar": {
-        "@apply h-12/1 w-full f-row justify-between items-center text-lg px-3": {},
+        "@apply h-12/1 w-full f-row justify-between items-center text-lg px-3":
+            {},
     },
     ".titlebar div:last-child": {
         "@apply f-row gap-x-2 px-1 items-center": {},

@@ -9,9 +9,9 @@ module.exports = {
         "@apply f-row w-1/2 items-center justify-start": {},
     },
     ".alert > .footer": {
-        "@apply flex justify-end items-center": {}, 
+        "@apply flex justify-end items-center": {},
     },
     "#close": {
         "@apply text-lg font-extrabold": {},
     },
-}
+};

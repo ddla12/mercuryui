@@ -24,7 +24,7 @@ module.exports = {
         "@apply pl-3 w-full": {},
     },
     ".themed-card > .body > .footer": {
-        "@apply px-3 py-1": {}, 
+        "@apply px-3 py-1": {},
     },
     ".image-card": {
         "@apply rounded-md shadow-md overflow-hidden size-full gap-3": {},
@@ -43,7 +43,7 @@ module.exports = {
     },
     ".image-card > .body": {
         "@apply f-col gap-y-0.5 p-2 max-h-full place-content-center": {},
-     },
+    },
     ".card-primary": {
         "@apply theme-primary": {},
     },

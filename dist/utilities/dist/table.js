@@ -17,4 +17,4 @@ module.exports = {
     ".thead": {
         "@apply table-header-group align-middle": {},
     },
-}
+};

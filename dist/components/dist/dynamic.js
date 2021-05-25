@@ -1,9 +1,10 @@
-module.exports =  {
+module.exports = {
     /**
      * Modal
      */
-     ".modal-dialog": {
-        "@apply z-20 fixed top-0 left-0 flex items-center justify-center size-screen bg-black bg-opacity-50": {},
+    ".modal-dialog": {
+        "@apply z-20 fixed top-0 left-0 flex items-center justify-center size-screen bg-black bg-opacity-50":
+            {},
     },
     ".modal": {
         "@apply z-30": {},
@@ -15,19 +16,23 @@ module.exports =  {
         "@apply -mb-2 h-14 max-w-full overflow-x-auto f-row gap-x-2 pt-1": {},
     },
     ".tab-btn": {
-        "@apply z-0 flex-none f-col align-middle text-center px-3 py-2 rounded-lg shadow-lg cursor-pointer": {},
+        "@apply z-0 flex-none f-col align-middle text-center px-3 py-2 rounded-lg shadow-lg cursor-pointer":
+            {},
     },
     ".tabs-content": {
-        "@apply p-6 z-20 relative font-semibold text-justify rounded-bl-lg rounded-br-lg shadow-lg max-h-96 overflow-y-auto": {},
+        "@apply p-6 z-20 relative font-semibold text-justify rounded-bl-lg rounded-br-lg shadow-lg max-h-96 overflow-y-auto":
+            {},
     },
     /**
      *  Dropdown
      */
-     ".dropdown": {
-        "@apply f-row items-center justify-between px-3 font-semibold rounded-lg shadow-lg clickeable": {},
+    ".dropdown": {
+        "@apply f-row items-center justify-between px-3 font-semibold rounded-lg shadow-lg clickeable":
+            {},
     },
     ".dropdown-list": {
-        "@apply absolute inset-x-0 shadow-lg p-4 rounded-md text-black f-col": {},
+        "@apply absolute inset-x-0 shadow-lg p-4 rounded-md text-black f-col":
+            {},
     },
     ".dropdown-list > ul": {
         "@apply list-none f-col gap-y-1": {},
@@ -38,7 +43,7 @@ module.exports =  {
     /**
      *  List
      */
-     ".list": {
+    ".list": {
         "@apply size-full list-none": {},
     },
     ".list.list-default": {
@@ -57,15 +62,17 @@ module.exports =  {
         "@apply border-2 rounded-lg relative": {},
     },
     ".collapse > .body": {
-       "@apply relative overflow-hidden transition-all max-h-0 duration-300": {},
+        "@apply relative overflow-hidden transition-all max-h-0 duration-300":
+            {},
     },
     ".collapse > .head": {
-        "@apply w-full p-4 text-left cursor-pointer flex items-center justify-between": {},
+        "@apply w-full p-4 text-left cursor-pointer flex items-center justify-between":
+            {},
     },
     /**
      *  Slider component
      */
-     ".slider": {
+    ".slider": {
         "@apply relative size-full": {},
     },
     ".slider-item": {
@@ -78,7 +85,8 @@ module.exports =  {
         "@apply f-row inset-0 size-full absolute overflow-hidden z-0": {},
     },
     ".slide-control": {
-        "@apply absolute inset-y-0 h-full w-12 bg-opacity-25 z-10 f-col items-center": {},
+        "@apply absolute inset-y-0 h-full w-12 bg-opacity-25 z-10 f-col items-center":
+            {},
     },
     ".slide-control-left": {
         "@apply slider-control left-0": {},
@@ -92,4 +100,4 @@ module.exports =  {
     ".slide-button > svg": {
         "@apply h-6 w-6 cursor-pointer": {},
     },
-}
+};
