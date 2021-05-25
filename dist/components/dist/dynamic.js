@@ -84,14 +84,14 @@ module.exports = {
     ".slider-images": {
         "@apply f-row inset-0 size-full absolute overflow-hidden z-0": {},
     },
-    ".slide-control": {
+    ".slider-control": {
         "@apply absolute inset-y-0 h-full w-12 bg-opacity-25 z-10 f-col items-center":
             {},
     },
-    ".slide-control-left": {
+    ".slider-control-left": {
         "@apply slider-control left-0": {},
     },
-    ".slide-control-right": {
+    ".slider-control-right": {
         "@apply slider-control right-0": {},
     },
     ".slide-button": {

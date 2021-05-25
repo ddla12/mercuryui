@@ -90,4 +90,7 @@ module.exports = {
     ".flippable-icon": {
         "@apply h-6 w-6 transform duration-150 ease-in-out": {},
     },
+    ".border-3": {
+        "border-width": "3px",
+    }
 };
