@@ -1,20 +1,20 @@
 module.exports = {
-    ".w-screen-2\/4": {
+    ".w-screen-2\\/4": {
         "width": "50vw",
     },
-    ".w-screen-3\/4": {
+    ".w-screen-3\\/4": {
         "width": "75vw",
     },
-    ".w-screen-1\/4": {
+    ".w-screen-1\\/4": {
         "width": "25vw",
     },
-    ".h-screen-1\/4": {
+    ".h-screen-1\\/4": {
         "height": "25vh",
     },
-    ".h-screen-2\/4": {
+    ".h-screen-2\\/4": {
         "height": "50vh",
     },
-    ".h-screen-3\/4": {
+    ".h-screen-3\\/4": {
         "height": "75vh",
     },
     ".w-68": {
@@ -83,10 +83,10 @@ module.exports = {
     ".h-128": {
         "height": "32rem",
     },     
-    ".h-12\/1": {
+    ".h-12\\/1": {
         "height": "12%",
     },
-    ".h-88\/1": {
+    ".h-88\\/1": {
         "height": "88%",
     },
     ".size-full": {
@@ -95,25 +95,34 @@ module.exports = {
     ".size-half": {
         "@apply w-1/2 h-1/2": {},
     },
-    ".size-1\/4": {
+    ".size-1\\/4": {
         "@apply w-1/4 h-1/4": {},
     },
-    ".size-3\/4": {
+    ".size-3\\/4": {
         "@apply w-3/4 h-3/4": {},
     },
     ".size-screen": {
         "@apply w-screen h-screen": {},
     },
-    ".size-screen-1\/2": {
-        "@apply w-screen-2\/4 h-screen-2\/4": {},
+    ".size-screen-1\\/2": {
+        "@apply w-screen-2/4 h-screen-2/4": {},
     },
-    ".size-screen-3\/4": {
-        "@apply w-screen-3\/4 h-screen-3\/4": {},
+    ".size-screen-3\\\/4": {
+        "@apply w-screen-3/4 h-screen-3/4": {},
     },
-    ".size-screen-1\/4": {
-        "@apply w-screen-1\/4 h-screen-1\/4": {},
+    ".size-screen-1\\/4": {
+        "@apply w-screen-1/4 h-screen-1/4": {},
     },
     ".size-screen": {
         "@apply w-screen h-screen": {},
+    },
+    ".-ml-18": {
+        "margin-left": "-4.4rem",
+    },
+    ".-mr-18": {
+        "margin-right": "-4.5rem",
+    },
+    ".-mb-18": {
+        "margin-bottom": "-4.5rem",
     },
 }

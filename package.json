@@ -4,7 +4,8 @@
   "description": "A plugin for Tailwind CSS, based on predesigned component classes",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "node postinstall.js"
   },
   "repository": {
     "type": "git",
@@ -15,9 +16,12 @@
   },
   "homepage": "https://github.com/ddla12/mercuryui#readme",
   "devDependencies": {
-    "postcss": "^8.1.10",
-    "alpinejs": "^2.8.0",
-    "tailwindcss": "^2.0.1"
+    "lodash"      : "^4.17.21",
+    "postcss"     : "^8.1.10",
+    "alpinejs"    : "^2.8.0",
+    "tailwindcss" : "^2.0.1",
+    "uglify-js"   : "^3.13.7",
+    "colors"      : "^1.4.0"
   },
   "keywords": [
     "tailwindcss",

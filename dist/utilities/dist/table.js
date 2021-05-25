@@ -5,16 +5,16 @@ module.exports = {
     ".table-responsive": {
         "@apply flex-grow min-w-full px-2 overflow-auto": {},
     },
-    "tbody": {
+    ".tbody": {
         "@apply table-row-group align-middle": {},
     },
-    "td": {
+    ".td": {
         "@apply whitespace-nowrap": {},
     },
-    "th": {
+    ".th": {
         "@apply top-0 whitespace-nowrap": {},
     },
-    "thead": {
+    ".thead": {
         "@apply table-header-group align-middle": {},
     },
 }

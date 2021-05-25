@@ -1,14 +1,14 @@
 module.exports = {
     ".alert": {
-        "@apply p-4 rounded-md shadow-md font-semibold": {},
+        "@apply p-4 f-row justify-between w-full": {},
     },
-    ".alert-content": {
-        "@apply f-row justify-between w-full": {},
+    ".alert .alert-default": {
+        "@apply rounded-md shadow-md font-semibold": {},
     },
-    ".alert-content .icon": {
+    ".alert > .body": {
         "@apply f-row w-1/2 items-center justify-start": {},
     },
-    ".alert-content .dismissible": {
+    ".alert > .footer": {
         "@apply flex justify-end items-center": {}, 
     },
     "#close": {

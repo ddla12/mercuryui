@@ -2,54 +2,48 @@ module.exports = {
     ".card, .themed-card": {
         "@apply p-4 rounded-md shadow-md": {},
     },
-    ".card-title": {
-        "@apply text-2xl xl:text-4xl font-semibold p-2 w-full": {},
-    },
-    ".themed-card .card-body": {
-        "@apply f-col gap-y-2": {},
-    },
-    ".themed-card .card-body .body": {
-        "@apply px-4 py-2 rounded-md text-base text-justify font-medium w-full": {},
-    },
-    ".themed-card .card-body .head": {
-        "@apply pl-3 text-4xl text-left font-semibold w-full": {},
-    },
-    ".themed-card .card-body .footer": {
-        "@apply border-t-2 px-3 py-1 font-light text-left text-sm": {}, 
-    },
-    ".card-border, .image-card-border, .topcard-border, .subcard-border": {
+    ".card-border": {
         "@apply border-2": {},
+    },
+    ".card > .head": {
+        "@apply p-2 w-full": {},
+    },
+    ".card > .body, .themed-card > .body": {
+        "@apply f-col gap-y-2 w-full": {},
     },
     ".topcard, .subcard": {
         "@apply p-2 rounded-md shadow-sm": {},
     },
-    ".card-default": {
-        "@apply text-black": {},
+    ".downcard": {
+        "@apply p-4 rounded-md shadow-inner overflow-auto": {},
     },
-    ".image-card-h": {
-        "@apply rounded-md shadow-md f-col md:flex-row gap-3 overflow-hidden size-full": {},
+    ".themed-card > .body > .content": {
+        "@apply px-4 py-2 rounded-md w-full": {},
     },
-    ".image-box": {
-        "@apply size-full f-row justify-center": {},
+    ".themed-card > .body > .title": {
+        "@apply pl-3 w-full": {},
     },
-    ".image-card-v": {
-        "@apply rounded-md shadow-md f-col gap-3 overflow-hidden size-full md:w-3/4 md:mx-auto": {},
+    ".themed-card > .body > .footer": {
+        "@apply px-3 py-1": {}, 
     },
-    ".image-card-h > div:first-child, .image-card-h > div:last-child": {
-        "@apply md:w-1/2": {},
+    ".image-card": {
+        "@apply rounded-md shadow-md overflow-hidden size-full gap-3": {},
     },
-    ".rounded-box": {
-        "@apply rounded-full h-32 w-32 flex items-center justify-center overflow-hidden": {},
+    ".image-card .horizontal": {
+        "@apply f-row": {},
     },
-    ".image-card-body": {
-       "@apply f-col gap-y-0.5 p-2 max-h-full place-content-center w-full": {},
+    ".image-card .vertical": {
+        "@apply f-col": {},
     },
-    ".image-card-body .head": {
-        "@apply text-4xl sm:text-lg lg:text-2xl 2xl:text-5xl text-left font-extrabold w-full": {},
+    ".image-card > .image": {
+        "@apply flex justify-center": {},
     },
-    ".image-card-body .body": {
-        "@apply px-3 rounded-md text-base sm:text-xs lg:text-base 2xl:text-2xl w-full text-justify": {},
+    ".image-card > .horizontal > .body, .image-card > .horizontal > .image": {
+        "@apply w-1/2": {},
     },
+    ".image-card > .body": {
+        "@apply f-col gap-y-0.5 p-2 max-h-full place-content-center": {},
+     },
     ".card-primary": {
         "@apply theme-primary": {},
     },
@@ -67,8 +61,5 @@ module.exports = {
     },
     ".card-warning": {
         "@apply theme-warning": {},
-    },
-    ".downcard": {
-        "@apply p-4 rounded-md shadow-inner overflow-auto": {},
     },
 };

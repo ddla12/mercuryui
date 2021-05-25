@@ -2,10 +2,10 @@ module.exports = {
     ".popover": {
         "@apply z-10 w-52 p-2 text-sm leading-tight rounded-lg shadow-lg": {},
     },
-    ".popover-title": {
+    ".popover > .title": {
         "@apply text-sm font-bold text-left": {},
     },
-    ".popover-body": {
+    ".popover > .body": {
         "@apply text-justify text-xs font-bold p-1": {},
     },
     ".popover-left": {

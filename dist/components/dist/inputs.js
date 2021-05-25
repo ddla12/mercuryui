@@ -1,5 +1,5 @@
 module.exports = {
-    "form": {
+    ".form-default": {
         "@apply p-3 block": {},
     },
     ".form-control": {
@@ -9,69 +9,67 @@ module.exports = {
         "@apply block text-sm font-bold text-gray-900 p-2": {},
     },
     ".input": {
-        "@apply transition duration-500 ease-in-out w-full p-4 py-2 rounded-xl border-3 outline-none focus:ring-3 focus:outline-none font-bold shadow-lg": {},
+        "@apply w-full p-4 py-2": {},
     },
-    "textarea": {
+    ".input-default": {
+        "@apply transition duration-500 ease-in-out rounded-xl border-3 outline-none focus:ring focus:outline-none font-bold shadow-lg placeholder-opacity-75": {},
+    },
+    ".input .textarea": {
         "@apply resize-none": {},
     },
-    ".checkbox-div": {
-        "@apply rounded-full border-2 w-6 h-6 transition duration-200 ease-in-out text-white relative": {},
-    },
-    ".checkbox": {
+    /**
+     *  Checkbox input
+     */
+     ".checkbox": {
         "@apply flex flex-row w-full gap-x-4": {},
     },
-    ".checkbox .label": {
+     ".checkbox > .body": {
+        "@apply border-2 lg:w-8 lg:h-8 w-6 h-6 transition duration-200 ease-in-out text-white relative": {},
+    },
+    ".checkbox > .label": {
         "@apply text-sm font-extrabold": {},
     },
     ".checkbox svg": {
-        "@apply z-10 h-5 w-5 hidden": {},
+        "@apply z-10 h-5 w-5 lg:h-7 lg:w-7  hidden": {},
     },
-    ".checkbox-input": {
-        "@apply absolute w-6 h-6 opacity-0 cursor-pointer": {},
+    ".checkbox > input[type = 'checkbox']": {
+        "@apply absolute lg:w-8 lg:h-8 w-6 h-6 opacity-0 cursor-pointer": {},
+    },
+    ".checkbox > .body > input[type='checkbox']:checked + svg, input[type = 'radio']:checked + svg": {
+        "@apply block": {},
     },
     ".color-name": {
         "@apply text-lg font-semibold my-auto": {},
     },
-    ".input-color": {
-        "@apply flex flex-col gap-y-3 bg-gray-300 shadow-lg rounded-lg p-2": {},
-    },
-    ".input-color .label": {
-        "@apply bg-gray-100 py-1 px-3 rounded-lg text-lg font-semibold text-black": {},
-    },
-    ".input-color .body":  {
-        "@apply bg-gray-200 rounded-lg flex flex-row p-4 gap-x-2": {},
-    },
-    ".input-color .body .color": {
-        "@apply w-12 h-12 rounded-full relative": {},
-    },
-    ".input-color .body .color input[type = 'color']": {
-        "@apply cursor-pointer appearance-none opacity-0 absolute w-12 h-12": {},
-    },
-    ".checkbox .body input[type='checkbox']:checked + svg, input[type = 'radio']:checked + svg": {
-        "@apply block": {},
-    },
-    ".toggle label .body": {
-        "@apply relative": {},
-    },
+    /**
+     *  Toggle component
+     */
     ".toggle": {
         "@apply flex items-center justify-center w-full": {},
     },
-    ".toggle label": {
-        "@apply flex items-center cursor-pointer": {},
-    },
-    ".toggle label .label": {
-        "@apply ml-3 text-gray-700 font-bold": {},
-    },
-    ".toggle-bg": {
+    ".toggle > .body": {
         "@apply block relative border-2 bg-gray-200 w-14 h-8 rounded-full": {},
     },
-    ".dot": {
-        "@apply absolute top-1 left-1 w-6 h-6 rounded-full transition duration-150 ease-out": {},
+    ".toggle > .label": {
+        "@apply ml-3 text-gray-700 font-bold": {},
     },
+    ".toggle > .body > input[type = 'checkbox']": {
+        "@apply absolute opacity-0 z-10 w-14 h-8 cursor-pointer": {},
+    }, 
+    ".dot": {
+        "@apply absolute top-0.5 left-1 w-6 h-6 rounded-full transition duration-150 ease-out": {},
+    },
+    "input[type = 'checkbox']:checked + .dot": {
+        "@apply filter brightness-150": {},
+        "transform": "translateX(85%)",
+    },
+    /**
+     *  Radio component
+     */
     ".radio": {
         "@apply flex flex-row gap-x-2": {},
     },
-    ".radio .body": {
+    ".radio > .body": {
         "@apply w-6 h-6 relative rounded-lg border-2 shadow-md": {},
     },
     "input[type = 'radio']": {
@@ -80,7 +78,13 @@ module.exports = {
     "input[type = 'radio'] + svg": {
         "@apply absolute w-5 h-5 hidden transition duration-200 ease-in-out": {},
     },
-    ".radio .label": {
-        "@apply text-base text-gray-800 font-bold select-none": {},
+    ".radio > .label": {
+        "@apply text-base select-none": {},
+    },
+    /**
+     *  Color onput
+     */
+    "input[type = 'color'].color-input": {
+        "@apply cursor-pointer appearance-none opacity-0 absolute": {},
     },
 };

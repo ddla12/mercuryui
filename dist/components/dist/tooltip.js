@@ -17,16 +17,16 @@ module.exports = {
     ".tooltip-bottom-right": {
         "@apply bottom-0 right-0 -mb-8 -mr-16": {},
     },
-    ".tooltip-top-left > .tooltip > span > svg": {
+    "div.tooltip-top-left > span > svg": {
         "@apply translate-x-1 -translate-y-1": {},
     },
-    ".tooltip-top-right > .tooltip > span > svg": {
+    "div.tooltip-top-right > span > svg": {
         "@apply translate-x-14 -translate-y-1": {},
     },
-    ".tooltip-bottom-left > .tooltip > span > svg": {
+    "div.tooltip-bottom-left > span > svg": {
         "@apply translate-x-14 -translate-y-9": {},
     },
-    ".tooltip-bottom-right > .tooltip > span > svg": {
+    "div.tooltip-bottom-right > span > svg": {
         "@apply translate-x-1 -translate-y-9": {},
     },
 };
