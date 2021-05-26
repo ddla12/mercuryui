@@ -40,7 +40,7 @@ module.exports = {
         "@apply text-g bg-gradient-to-r from-danger-400 to-danger-500": {},
     },
     ".text-g-warning": {
-        "@apply text-g bg-gradient-to-r from-primary-warning to-primary-warning": {},
+        "@apply text-g bg-gradient-to-r from-warning-400 to-warning-400": {},
     },
     ".bg-darker": {
         "@apply backdrop-filter backdrop-brightness-75": {},
