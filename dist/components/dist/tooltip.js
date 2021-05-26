@@ -8,16 +8,16 @@ module.exports = {
             {},
     },
     ".tooltip-top-left": {
-        "@apply left-0 top-0 -ml-16 -mt-8": {},
+        "@apply top-left -ml-16 -mt-8": {},
     },
     ".tooltip-top-right": {
-        "@apply top-0 right-0 -mr-16 -mt-8": {},
+        "@apply top-right -mr-16 -mt-8": {},
     },
     ".tooltip-bottom-left": {
-        "@apply bottom-0 left-0 -mb-8 -ml-16": {},
+        "@apply bottom-left -mb-8 -ml-16": {},
     },
     ".tooltip-bottom-right": {
-        "@apply bottom-0 right-0 -mb-8 -mr-16": {},
+        "@apply bottom-right -mb-8 -mr-16": {},
     },
     "div.tooltip-top-left > span > svg": {
         "@apply translate-x-1 -translate-y-1": {},
@@ -30,5 +30,8 @@ module.exports = {
     },
     "div.tooltip-bottom-right > span > svg": {
         "@apply translate-x-1 -translate-y-9": {},
+    },
+    ".has-tooltip:hover .tooltip": {
+        "@apply opacity-100": {},
     },
 };

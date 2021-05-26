@@ -27,11 +27,19 @@ module.exports = {
      *  Dropdown
      */
     ".dropdown": {
-        "@apply f-row items-center justify-between px-3 font-semibold rounded-lg shadow-lg clickeable":
+        "@apply relative f-row items-center justify-between px-3 font-semibold rounded-lg shadow-lg clickeable":
             {},
     },
     ".dropdown-list": {
         "@apply absolute inset-x-0 shadow-lg p-4 rounded-md text-black f-col":
+            {},
+    },
+    ".dropdown-list-top": {
+        "@apply dropdown-list top-12":
+            {},
+    },
+    ".dropdown-list-bottom": {
+        "@apply dropdown-list bottom-12":
             {},
     },
     ".dropdown-list > ul": {
@@ -52,7 +60,7 @@ module.exports = {
     ".list li": {
         "@apply list-item": {},
     },
-    ".list > li .li-default": {
+    ".list > li.li-default": {
         "@apply border-b-2 last:border-0 p-2": {},
     },
     /**

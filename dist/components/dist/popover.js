@@ -9,15 +9,15 @@ module.exports = {
         "@apply text-justify text-xs font-bold p-1": {},
     },
     ".popover-left": {
-        "@apply inset-y-0 left-0 -ml-52": {},
+        "@apply in-left -ml-52": {},
     },
     ".popover-right": {
-        "@apply inset-y-0 right-0 -mr-52": {},
+        "@apply in-right -mr-52": {},
     },
     ".popover-top": {
-        "@apply inset-x-0 top-0 -mt-28 -ml-16": {},
+        "@apply in-top -mt-28 -ml-16": {},
     },
     ".popover-bottom": {
-        "@apply inset-x-0 bottom-0 -mb-28 -ml-14": {},
+        "@apply in-bottom -mb-28 -ml-14": {},
     },
 };

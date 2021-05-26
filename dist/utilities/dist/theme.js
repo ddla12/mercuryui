@@ -21,51 +21,96 @@ module.exports = {
     ".theme-info": {
         "@apply bg-gradient-to-r from-info-500 to-info-600 text-white": {},
     },
+    ".text-g": {
+        "@apply bg-clip-text text-transparent": {},
+    },
+    ".text-g-primary": {
+        "@apply text-g bg-gradient-to-r from-primary-400 to-primary-500": {},
+    },
+    ".text-g-secondary": {
+        "@apply text-g bg-gradient-to-r from-secondary-400 to-secondary-500": {},
+    },
+    ".text-g-success": {
+        "@apply text-g bg-gradient-to-r from-success-400 to-success-500": {},
+    },
+    ".text-g-info": {
+        "@apply text-g bg-gradient-to-r from-info-400 to-info-500": {},
+    },
+    ".text-g-danger": {
+        "@apply text-g bg-gradient-to-r from-danger-400 to-danger-500": {},
+    },
+    ".text-g-warning": {
+        "@apply text-g bg-gradient-to-r from-primary-warning to-primary-warning": {},
+    },
     ".bg-darker": {
         "@apply backdrop-filter backdrop-brightness-75": {},
     },
     ".bg-lighter": {
         "@apply backdrop-filter backdrop-brightness-110": {},
     },
-    ".input .theme-primary": {
+    ".input-primary": {
         "@apply border-primary-400 focus:ring-primary-500 placeholder-primary-400":
             {},
     },
-    ".input .theme-secondary": {
+    ".input-secondary": {
         "@apply border-secondary-400 focus:ring-secondary-500 placeholder-secondary-400":
             {},
     },
-    ".input .theme-danger": {
+    ".input-danger": {
         "@apply border-danger-400 focus:ring-danger-500 placeholder-danger-400":
             {},
     },
-    ".input .theme-success": {
+    ".input-success": {
         "@apply border-success-400 focus:ring-success-500 placeholder-success-400":
             {},
     },
-    ".input .theme-warning": {
+    ".input-warning": {
         "@apply border-warning-400 focus:ring-warning-500 placeholder-warning-400":
             {},
     },
-    ".input .theme-info": {
+    ".input-info": {
         "@apply border-info-400 focus:ring-info-500 placeholder-info-400": {},
     },
-    ".checkbox > .body .theme-primary": {
+    ".checkbox-primary": {
         "@apply border-primary-400 bg-opacity-0 bg-primary-400": {},
     },
-    ".checkbox > .body .theme-secondary": {
+    ".checkbox-secondary": {
         "@apply border-secondary-400 bg-opacity-0 bg-secondary-400": {},
     },
-    ".checkbox > .body .theme-success": {
+    ".checkbox-success": {
         "@apply border-success-400 bg-opacity-0 bg-success-400": {},
     },
-    ".checkbox > .body .theme-info": {
+    ".checkbox-info": {
         "@apply border-info-400 bg-opacity-0 bg-info-400": {},
     },
-    ".checkbox > .body .theme-danger": {
+    ".checkbox-danger": {
         "@apply border-danger-400 bg-opacity-0 bg-danger-400": {},
     },
-    ".checkbox > .body .theme-warning": {
+    ".checkbox-warning": {
         "@apply border-warning-400 bg-opacity-0 bg-warning-400": {},
+    },
+    ".link-default": {
+        "@apply text-gray-700 hover:text-gray-900": {},
+    },
+    ".link-white": {
+        "@apply text-gray-100 hover:text-gray-300": {},
+    },
+    ".link-primary": {
+        "@apply text-primary-400 hover:text-primary-500": {},
+    },
+    ".link-secondary": {
+        "@apply text-secondary-400 hover:text-secondary-500": {},
+    },
+    ".link-info": {
+        "@apply text-info-400 hover:text-info-500": {},
+    },
+    ".link-success": {
+        "@apply text-success-400 hover:text-success-500": {},
+    },
+    ".link-danger": {
+        "@apply text-danger-400 hover:text-danger-500": {},
+    },
+    ".link-warning": {
+        "@apply text-warning-400 hover:text-warning-500": {},
     },
 };

@@ -65,7 +65,7 @@ module.exports = {
     },
     "input[type = 'checkbox']:checked + .dot": {
         "@apply filter brightness-150": {},
-        transform: "translateX(85%)",
+        "transform": "translateX(85%)",
     },
     /**
      *  Radio component

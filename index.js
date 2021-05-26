@@ -2,13 +2,22 @@ const plugin = require("tailwindcss/plugin");
 const colors = require("tailwindcss/colors");
 const components = require("./dist/components");
 const utilities = require("./dist/utilities");
+const base = require("./dist/base");
 const { forEach } = require("lodash");
 
 module.exports = plugin.withOptions(
     () => {
-        return ({ addUtilities, addComponents }) => {
+        return ({ addBase, addUtilities, addComponents }) => {
+            addBase(base);
             forEach(utilities, (utility) => {
-                addUtilities(utility);
+                addUtilities(utility, {
+                    variants: [
+                        'responsive',
+                        'hover',
+                        'focus',
+                        'disabled',
+                    ]
+                });
             });
             forEach(components, (component) => {
                 addComponents(component);

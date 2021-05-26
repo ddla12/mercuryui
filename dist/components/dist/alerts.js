@@ -2,8 +2,11 @@ module.exports = {
     ".alert": {
         "@apply p-4 f-row justify-between w-full": {},
     },
-    ".alert .alert-default": {
+    ".alert.alert-default": {
         "@apply rounded-md shadow-md font-semibold": {},
+    },
+    ".alert.alert-plain": {
+        "@apply shadow-sm font-semibold": {},
     },
     ".alert > .body": {
         "@apply f-row w-1/2 items-center justify-start": {},
@@ -11,7 +14,7 @@ module.exports = {
     ".alert > .footer": {
         "@apply flex justify-end items-center": {},
     },
-    "#close": {
-        "@apply text-lg font-extrabold": {},
+    "span.close": {
+        "@apply text-xl font-extrabold": {},
     },
 };

@@ -29,10 +29,10 @@ module.exports = {
     ".image-card": {
         "@apply rounded-md shadow-md overflow-hidden size-full gap-3": {},
     },
-    ".image-card .horizontal": {
+    ".image-card.horizontal": {
         "@apply f-row": {},
     },
-    ".image-card .vertical": {
+    ".image-card.vertical": {
         "@apply f-col": {},
     },
     ".image-card > .image": {

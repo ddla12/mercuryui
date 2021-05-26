@@ -3,10 +3,10 @@ module.exports = {
         "@apply f-row p-2 justify-center my-auto": {},
     },
     ".button": {
-        "@apply select-none text-center w-full clickeable": {},
+        "@apply select-none text-center w-full": {},
     },
     ".button-default": {
-        "@apply font-bold rounded-md": {},
+        "@apply font-bold rounded-md clickeable": {},
     },
     ".button > .body, .badge > .body": {
         "@apply f-row gap-x-2 mx-auto justify-center flex-nowrap relative": {},
