@@ -1,7 +1,14 @@
+/**
+ * 
+ *  EN:
+ *      Dynamic componentes sub-module:
+ *          Components that need logic to function
+ *  ES:
+ *      Submódulo de componentes dinámicos:
+ *          Componentes que necesitan lógica para su función
+ */
 module.exports = {
-    /**
-     * Modal
-     */
+    //#region Modal
     ".modal-dialog": {
         "@apply z-20 fixed top-0 left-0 flex items-center justify-center size-screen bg-black bg-opacity-50":
             {},
@@ -9,9 +16,8 @@ module.exports = {
     ".modal": {
         "@apply z-30": {},
     },
-    /**
-     *  Tabs
-     */
+    //#endregion
+    //#region Tabs
     ".tabs-control": {
         "@apply -mb-2 h-14 max-w-full overflow-x-auto f-row gap-x-2 pt-1": {},
     },
@@ -23,9 +29,8 @@ module.exports = {
         "@apply p-6 z-20 relative font-semibold text-justify rounded-bl-lg rounded-br-lg shadow-lg max-h-96 overflow-y-auto":
             {},
     },
-    /**
-     *  Dropdown
-     */
+    //#endregion
+    //#region Dropdown
     ".dropdown": {
         "@apply relative f-row items-center justify-between px-3 font-semibold rounded-lg shadow-lg clickeable":
             {},
@@ -48,9 +53,8 @@ module.exports = {
     ".dropdown-item": {
         "@apply p-1 text-lg font-bold cursor-pointer select-none": {},
     },
-    /**
-     *  List
-     */
+    //#endregion
+    //#region List
     ".list": {
         "@apply size-full list-none": {},
     },
@@ -63,9 +67,8 @@ module.exports = {
     ".list > li.li-default": {
         "@apply border-b-2 last:border-0 p-2": {},
     },
-    /**
-     *  Colapse component
-     */
+    //#endregion
+    //#region Collapse
     ".collapse": {
         "@apply border-2 rounded-lg relative": {},
     },
@@ -77,9 +80,8 @@ module.exports = {
         "@apply w-full p-4 text-left cursor-pointer flex items-center justify-between":
             {},
     },
-    /**
-     *  Slider component
-     */
+    //#endregion
+    //#region Slider
     ".slider": {
         "@apply relative size-full": {},
     },
@@ -108,4 +110,5 @@ module.exports = {
     ".slide-button > svg": {
         "@apply h-6 w-6 cursor-pointer": {},
     },
+    //#endregion
 };

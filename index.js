@@ -1,9 +1,17 @@
-const plugin = require("tailwindcss/plugin");
-const colors = require("tailwindcss/colors");
-const components = require("./dist/components");
-const utilities = require("./dist/utilities");
-const base = require("./dist/base");
-const { forEach } = require("lodash");
+/**
+ *      MercuryUI 1.0.0-beta.3
+ *  ES:
+ *     You should not modify this file for any reason,
+ *  EN:
+ *      No debes modificar este archivo por ninguna razón
+ * 
+ */
+const plugin        = require("tailwindcss/plugin");
+const colors        = require("tailwindcss/colors");
+const components    = require("./src/components");
+const utilities     = require("./src/utilities");
+const base          = require("./src/base");
+const { forEach }   = require("lodash");
 
 module.exports = plugin.withOptions(
     () => {
@@ -24,6 +32,18 @@ module.exports = plugin.withOptions(
             });
         };
     },
+    /**
+     *      Importante
+     *  EN:
+     *      This function loads the default theme of the plugin. Variants required for how the plugin 
+     *      works, but the colors can be modified from your project's tailwind.config.js file, overwriting 
+     *      the values ​​of each color.
+     *  ES:
+     *      Esta función carga el tema por defecto del plugin. las variantes son necesarias para
+     *      el funcionamiento del mismo, pero los colores pueden ser modificados desde el archivo
+     *      tailwind.config.js de tu proyecto, sobreescribiendo los valores de cada color.
+     * 
+     */
     () => {
         return {
             theme: {
@@ -41,7 +61,7 @@ module.exports = plugin.withOptions(
             },
             variants: {
                 extend: {
-                    brightness: ["active"],
+                    brightness: ["active", "hover", "focus"],
                     scale: ["active"],
                     transitionTimingFunction: ["active"],
                     transitionDuration: ["active"],

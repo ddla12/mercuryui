@@ -1,4 +1,12 @@
+/**
+ * 
+ *  EN:
+ *      Button sub-module
+ *  ES:
+ *      Submódulo de botones
+ */
 module.exports = {
+    //#region Buttons
     ".button-component": {
         "@apply f-row p-2 justify-center my-auto": {},
     },
@@ -20,6 +28,8 @@ module.exports = {
     ".button-lg": {
         "@apply p-4 text-xl": {},
     },
+    //#endregion
+    //#region Badge
     ".badge": {
         "@apply text-sm px-2": {},
     },
@@ -29,4 +39,5 @@ module.exports = {
     ".badge-component": {
         "@apply f-row my-auto select-none": {},
     },
+    //#endregion
 };

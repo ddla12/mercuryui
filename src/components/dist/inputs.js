@@ -1,3 +1,10 @@
+/**
+ * 
+ *  EN:
+ *      Inputs submodule
+ *  ES:
+ *      Submódulo de inputs
+ */
 module.exports = {
     ".form-default": {
         "@apply p-3 block": {},
@@ -18,9 +25,10 @@ module.exports = {
     ".input .textarea": {
         "@apply resize-none": {},
     },
-    /**
-     *  Checkbox input
-     */
+    "input[type = 'color'].color-input": {
+        "@apply cursor-pointer appearance-none opacity-0 absolute": {},
+    },
+    //#region Checkbox
     ".checkbox": {
         "@apply flex flex-row w-full gap-x-4": {},
     },
@@ -44,9 +52,8 @@ module.exports = {
     ".color-name": {
         "@apply text-lg font-semibold my-auto": {},
     },
-    /**
-     *  Toggle component
-     */
+    //#endregion
+    //#region Toggle
     ".toggle": {
         "@apply flex items-center justify-center w-full": {},
     },
@@ -67,9 +74,8 @@ module.exports = {
         "@apply filter brightness-150": {},
         "transform": "translateX(85%)",
     },
-    /**
-     *  Radio component
-     */
+    //#endregion
+    //#region Radio
     ".radio": {
         "@apply flex flex-row gap-x-2": {},
     },
@@ -86,10 +92,5 @@ module.exports = {
     ".radio > .label": {
         "@apply text-base select-none": {},
     },
-    /**
-     *  Color onput
-     */
-    "input[type = 'color'].color-input": {
-        "@apply cursor-pointer appearance-none opacity-0 absolute": {},
-    },
+    //#endregion 
 };

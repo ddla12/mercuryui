@@ -1,3 +1,12 @@
+/**
+ * 
+ *  EN:
+ *      Table sub-module:
+ *          Table utilities only
+ *  ES:
+ *      Sub-módulo de tablas:
+ *          Sólo utilidades para tablas
+ */
 module.exports = {
     ".table-default": {
         "@apply relative table-auto w-full": {},

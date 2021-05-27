@@ -1,3 +1,9 @@
+/**
+ *  EN:
+ *      Card sub-module
+ *  ES:
+ *      Sub-módulo de cartas
+ */
 module.exports = {
     ".card, .themed-card": {
         "@apply p-4 rounded-md shadow-md": {},
@@ -26,6 +32,7 @@ module.exports = {
     ".themed-card > .body > .footer": {
         "@apply px-3 py-1": {},
     },
+    //#region Image Card
     ".image-card": {
         "@apply rounded-md shadow-md overflow-hidden size-full gap-3": {},
     },
@@ -44,22 +51,5 @@ module.exports = {
     ".image-card > .body": {
         "@apply f-col gap-y-0.5 p-2 max-h-full place-content-center": {},
     },
-    ".card-primary": {
-        "@apply theme-primary": {},
-    },
-    ".card-secondary": {
-        "@apply theme-secondary": {},
-    },
-    ".card-success": {
-        "@apply theme-success": {},
-    },
-    ".card-danger": {
-        "@apply theme-danger": {},
-    },
-    ".card-info": {
-        "@apply theme-info": {},
-    },
-    ".card-warning": {
-        "@apply theme-warning": {},
-    },
+    //#endregion
 };

@@ -1,4 +1,12 @@
+/**
+ * 
+ *  EN:
+ *      Theme sub-module
+ *  ES:
+ *      Sub-módulo de temas
+ */
 module.exports = {
+    //#region Themes
     ".theme-primary": {
         "@apply bg-gradient-to-r from-primary-500 to-primary-600 text-white":
             {},
@@ -21,6 +29,11 @@ module.exports = {
     ".theme-info": {
         "@apply bg-gradient-to-r from-info-500 to-info-600 text-white": {},
     },
+    //#endregion
+    //#region Text gradients
+    /**
+     *  Text gradients / Gradientes de texto
+     */
     ".text-g": {
         "@apply bg-clip-text text-transparent": {},
     },
@@ -42,12 +55,22 @@ module.exports = {
     ".text-g-warning": {
         "@apply text-g bg-gradient-to-r from-warning-400 to-warning-400": {},
     },
+    //#endregion
+    //#region Backdrops effects
+    /**
+     *  Backdrops effects / Efectos backdrop
+     */
     ".bg-darker": {
         "@apply backdrop-filter backdrop-brightness-75": {},
     },
     ".bg-lighter": {
         "@apply backdrop-filter backdrop-brightness-110": {},
     },
+    //#endregion
+    //#region Input themes
+    /**
+     *  Input themes / Temas de inputs
+     */
     ".input-primary": {
         "@apply border-primary-400 focus:ring-primary-500 placeholder-primary-400":
             {},
@@ -89,6 +112,11 @@ module.exports = {
     ".checkbox-warning": {
         "@apply border-warning-400 bg-opacity-0 bg-warning-400": {},
     },
+    //#endregion
+    //#region Link themes
+    /**
+     *  Link themes / Temas para los links
+     */
     ".link-default": {
         "@apply text-gray-700 hover:text-gray-900": {},
     },
@@ -113,4 +141,5 @@ module.exports = {
     ".link-warning": {
         "@apply text-warning-400 hover:text-warning-500": {},
     },
+    //#endregion
 };

@@ -1,3 +1,10 @@
+/**
+ * 
+ *  EN:
+ *      Popover sub-module
+ *  ES:
+ *      Submódulo de popover
+ */
 module.exports = {
     ".popover": {
         "@apply z-10 w-52 p-2 text-sm leading-tight rounded-lg shadow-lg": {},

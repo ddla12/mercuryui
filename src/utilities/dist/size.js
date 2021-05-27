@@ -1,109 +1,132 @@
+/**
+ *  EN:
+ *      Size utilities
+ *  ES:
+ *      Utilidades de tamaños
+ */
 module.exports = {
+    //#region Width
+    /**
+     *  Width utilities / Utilidades de anchura
+     */
     ".w-screen-2\\/4": {
-        "width": "50vw",
+        width: "50vw",
     },
     ".w-screen-3\\/4": {
-        "width": "75vw",
+        width: "75vw",
     },
     ".w-screen-1\\/4": {
-        "width": "25vw",
-    },
-    ".h-screen-1\\/4": {
-        "height": "25vh",
-    },
-    ".h-screen-2\\/4": {
-        "height": "50vh",
-    },
-    ".h-screen-3\\/4": {
-        "height": "75vh",
+        width: "25vw",
     },
     ".w-68": {
-        "width": "17rem",
+        width: "17rem",
     },
     ".w-76": {
-        "width": "19rem",
+        width: "19rem",
     },
     ".w-84": {
-        "width": "21rem",
+        width: "21rem",
     },
     ".w-88": {
-        "width": "22rem",
+        width: "22rem",
     },
     ".w-92": {
-        "width": "23rem",
+        width: "23rem",
     },
     ".w-100": {
-        "width": "25rem",
+        width: "25rem",
     },
     ".w-104": {
-        "width": "26rem",
+        width: "26rem",
     },
     ".w-108": {
-        "width": "27rem",
+        width: "27rem",
     },
     ".w-112": {
-        "width": "28rem",
+        width: "28rem",
     },
     ".w-116": {
-        "width": "29rem",
+        width: "29rem",
     },
     ".w-120": {
-        "width": "30rem",
+        width: "30rem",
     },
     ".w-124": {
-        "width": "31rem",
+        width: "31rem",
     },
     ".w-128": {
-        "width": "32rem",
+        width: "32rem",
     },
+    //#endregion
+    //#region Height
+    /**
+     *  Height utilities / Utilidades de altura
+     */
     ".h-54": {
-        "height": "13.5rem",
+        height: "13.5rem",
     },
     ".h-68": {
-        "height": "17rem",
+        height: "17rem",
     },
     ".h-76": {
-        "height": "19rem",
+        height: "19rem",
     },
     ".h-84": {
-        "height": "21rem",
+        height: "21rem",
     },
     ".h-88": {
-        "height": "22rem",
+        height: "22rem",
     },
     ".h-92": {
-        "height": "23rem",
+        height: "23rem",
     },
     ".h-100": {
-        "height": "25rem",
+        height: "25rem",
     },
     ".h-104": {
-        "height": "26rem",
+        height: "26rem",
     },
     ".h-108": {
-        "height": "27rem",
+        height: "27rem",
     },
     ".h-112": {
-        "height": "28rem",
+        height: "28rem",
     },
     ".h-116": {
-        "height": "29rem",
+        height: "29rem",
     },
     ".h-120": {
-        "height": "30rem",
+        height: "30rem",
     },
     ".h-124": {
-        "height": "31rem",
+        height: "31rem",
     },
     ".h-128": {
-        "height": "32rem",
+        height: "32rem",
     },
     ".h-12\\/1": {
-        "height": "12%",
+        height: "12%",
     },
     ".h-88\\/1": {
-        "height": "88%",
+        height: "88%",
     },
+    ".h-screen-1\\/4": {
+        height: "25vh",
+    },
+    ".h-screen-2\\/4": {
+        height: "50vh",
+    },
+    ".h-screen-3\\/4": {
+        height: "75vh",
+    },
+    //#endregion
+    //#region 1x1 Utilities
+    /**
+     *  EN: 
+     *      Proportional Size Utilities 1x1
+     *  ES:
+     *      Utilidades de tamaño proporcional 1x1
+     */
     ".size-full": {
         "@apply w-full h-full": {},
     },
@@ -128,14 +151,59 @@ module.exports = {
     ".size-screen-1\\/4": {
         "@apply w-screen-1/4 h-screen-1/4": {},
     },
-    ".-ml-18": {
-        "margin-left": "-4.4rem",
+    ".square-0.5": {
+        "@apply w-0.5 h-0.5": {},
     },
-    ".-mr-18": {
-        "margin-right": "-4.5rem",
+    ".square-1.5": {
+        "@apply w-1.5 h-1.5": {},
     },
-    ".-mb-18": {
-        "margin-bottom": "-4.5rem",
+    ".square-2.5": {
+        "@apply w-2.5 h-2.5": {},
+    },
+    ".square-3.5": {
+        "@apply w-3.5 h-3.5": {},
+    },
+    ".square-1": {
+        "@apply w-1 h-1": {},
+    },
+    ".square-2": {
+        "@apply w-2 h-2": {},
+    },
+    ".square-3": {
+        "@apply w-3 h-3": {},
+    },
+    ".square-4": {
+        "@apply w-4 h-4": {},
+    },
+    ".square-5": {
+        "@apply w-5 h-5": {},
+    },
+    ".square-6": {
+        "@apply w-6 h-6": {},
+    },
+    ".square-7": {
+        "@apply w-7 h-7": {},
+    },
+    ".square-8": {
+        "@apply w-8 h-8": {},
+    },
+    ".square-9": {
+        "@apply w-9 h-9": {},
+    },
+    ".square-10": {
+        "@apply w-10 h-10": {},
+    },
+    ".square-11": {
+        "@apply w-11 h-11": {},
+    },
+    ".square-12": {
+        "@apply w-12 h-12": {},
+    },
+    ".square-14": {
+        "@apply w-14 h-14": {},
+    },
+    ".square-16": {
+        "@apply w-16 h-16": {},
     },
     ".square-20": {
         "@apply w-20 h-20": {},
@@ -221,4 +289,5 @@ module.exports = {
     ".square-128": {
         "@apply w-128 h-128": {},
     },
+    //#endregion
 };

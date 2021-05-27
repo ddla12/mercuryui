@@ -1,4 +1,12 @@
+/**
+ * 
+ *  EN:
+ *      Mockup sub-module
+ *  ES:
+ *      Submódulo de mockups
+ */
 module.exports = {
+    //#region Phone
     ".phone": {
         "@apply rounded-3xl border-8 f-col w-68 h-100 relative": {},
     },
@@ -12,6 +20,8 @@ module.exports = {
     "#camera": {
         "@apply h-2 w-2 rounded-full": {},
     },
+    //#endregion
+    //#region Window
     ".window-sm": {
         "@apply h-36 w-64": {},
     },
@@ -34,4 +44,5 @@ module.exports = {
     ".window .body": {
         "@apply h-88/1 w-full": {},
     },
+    //#endregion
 };

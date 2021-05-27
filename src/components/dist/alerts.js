@@ -1,3 +1,10 @@
+/**
+ * 
+ *  EN:
+ *      Alert sub-module
+ *  ES:
+ *      Submódulo de alertas
+ */
 module.exports = {
     ".alert": {
         "@apply p-4 f-row justify-between w-full": {},
