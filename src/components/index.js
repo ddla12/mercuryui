@@ -18,6 +18,5 @@ module.exports = {
     dynamic: require("./dist/dynamic"),
     inputs: require("./dist/inputs"),
     mockups: require("./dist/mockups"),
-    popover: require("./dist/popover"),
     tooltip: require("./dist/tooltip"),
 };

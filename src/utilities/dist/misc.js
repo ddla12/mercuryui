@@ -3,11 +3,8 @@
  *  Estas utilidades son necesarias para el funcionamiento del plugin
  */
 module.exports = {
-    ".has-tooltip": {
-        "@apply inline-flex cursor-default relative": {},
-    },
-    ".has-popover": {
-        "@apply relative inline-flex": {},
+    ".has-tooltip, .has-popover": {
+        "@apply relative f-col items-center group": {},
     },
     //#region Z-index utilities
     ".-z-10": {
@@ -71,6 +68,31 @@ module.exports = {
     },
     ".-mb-18": {
         "margin-bottom": "-4.5rem",
+    },
+    ".ghost": {
+        "@apply transition duration-150 ease-in-out": {},
+    },
+    ".ghost-outline": {
+        "@apply ghost border-2 bg-opacity-0 hover:bg-opacity-100": {},
+    },
+    ".pill": {
+        "@apply text-sm px-3 shadow-sm rounded-full": {},
+    },
+    ".disabled": {
+        "@apply filter brightness-75": {},
+    },
+    ".clickeable": {
+        "@apply filter active:brightness-90 transition-transform transform active:scale-110 focus:outline-none cursor-pointer":
+            {},
+    },
+    ".image-fill": {
+        "@apply object-fill size-full": {},
+    },
+    ".flippable-icon": {
+        "@apply square-6 transform duration-150 ease-in-out": {},
+    },
+    ".loading": {
+        "@apply animate-pulse p-2 middle-center cursor-wait": {},
     },
     //#endregion
 };

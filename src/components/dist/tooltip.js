@@ -5,43 +5,69 @@
  *      Submódulo de tooltips
  */
 module.exports = {
-    ".tooltip": {
-        "@apply visible z-100 select-none transition-opacity duration-100 ease-out opacity-0 w-32 p-2 text-sm leading-tight rounded-lg shadow-lg transform -translate-x-1/2 -translate-y-full":
+    ".tooltip, .popover": {
+        "@apply absolute items-center":
             {},
     },
-    ".tooltip-chart": {
-        "@apply text-white absolute z-10 w-6 h-6 transform fill-current stroke-current":
+    ".tooltip * , .popover * ": {
+        "@apply relative z-10 p-2 leading-none": {},
+    },
+    ".has-tooltip:hover > .tooltip": {
+        "@apply flex": {},
+    },
+    ".has-tooltip > .tooltip": {
+        "@apply hidden": {},
+    },
+    ".tooltip > .body": {
+        "@apply whitespace-nowrap": {},
+    },
+    ".tooltip.tooltip-default": {
+        "@apply shadow-md rounded-xl text-sm": {},
+    },
+    ".popover > .body": {
+        "@apply w-full h-4/5": {},
+    },
+    ".popover > .head": {
+        "@apply w-full h-1/5": {},
+    },
+    ".popover.popover-default": {
+        "@apply shadow-md rounded-xl text-sm flex-col": {},
+    },
+    ".arrow": {
+        "@apply w-3 h-3 transform rotate-45 bg-inherit":
             {},
     },
-    ".has-tooltip:hover .tooltip": {
-        "@apply opacity-100": {},
+    ".float-in-top": {
+        "@apply flex-col bottom-0 mb-6": {},
     },
-    //#region Tooltip position
-    ".tooltip-top-left": {
-        "@apply top-left -ml-16 -mt-8": {},
+    ".float-in-bottom": {
+        "@apply flex-col-reverse top-0 mt-6": {},
     },
-    ".tooltip-top-right": {
-        "@apply top-right -mr-16 -mt-8": {},
+    ".float-in-left": {
+        "@apply flex-row right-0 mr-6": {},
     },
-    ".tooltip-bottom-left": {
-        "@apply bottom-left -mb-8 -ml-16": {},
-    },
-    ".tooltip-bottom-right": {
-        "@apply bottom-right -mb-8 -mr-16": {},
+    ".float-in-right": {
+        "@apply flex-row-reverse left-0 ml-6": {},
     },
     //#endregion
     //#region Arrow position
-    "div.tooltip-top-left > span > svg": {
-        "@apply translate-x-1 -translate-y-1": {},
+    ".tooltip.float-in-top > .arrow": {
+        "@apply -mb-1": {},
     },
-    "div.tooltip-top-right > span > svg": {
-        "@apply translate-x-14 -translate-y-1": {},
+    ".tooltip.float-in-bottom > .arrow": {
+        "@apply -mt-1": {},
     },
-    "div.tooltip-bottom-left > span > svg": {
-        "@apply translate-x-14 -translate-y-9": {},
+    ".tooltip.float-in-right > .arrow": {
+        "@apply -mr-2": {},
     },
-    "div.tooltip-bottom-right > span > svg": {
-        "@apply translate-x-1 -translate-y-9": {},
+    ".tooltip.float-in-left > .arrow": {
+        "@apply -ml-2": {},
+    },
+    ".popover.float-in-top > .arrow": {
+        "@apply -mb-4": {},
+    },
+    ".popover.float-in-bottom > .arrow": {
+        "@apply order-first -mt-4": {},
     },
     //#endregion
 };

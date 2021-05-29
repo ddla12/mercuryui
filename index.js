@@ -9,7 +9,7 @@
 const plugin        = require("tailwindcss/plugin");
 const colors        = require("tailwindcss/colors");
 const components    = require("./src/components");
-const utilities     = require("./src/utilities");
+const { utilities, variants } = require("./src/utilities");
 const base          = require("./src/base");
 const { forEach }   = require("lodash");
 
@@ -17,16 +17,16 @@ module.exports = plugin.withOptions(
     () => {
         return ({ addBase, addUtilities, addComponents }) => {
             addBase(base);
+            //#region Utilities
+            let i = 0;
             forEach(utilities, (utility) => {
+                const name = Object.getOwnPropertyNames(variants)[i];
                 addUtilities(utility, {
-                    variants: [
-                        'responsive',
-                        'hover',
-                        'focus',
-                        'disabled',
-                    ]
+                    variants: variants[name], //Add the variants that have the same name as the utility
                 });
-            });
+                i++;
+            })
+            //#endregion
             forEach(components, (component) => {
                 addComponents(component);
             });

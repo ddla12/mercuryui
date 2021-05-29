@@ -95,22 +95,40 @@ module.exports = {
         "@apply border-info-400 focus:ring-info-500 placeholder-info-400": {},
     },
     ".checkbox-primary": {
-        "@apply border-primary-400 bg-opacity-0 bg-primary-400": {},
+        "@apply border-primary-400 bg-primary-400": {},
     },
     ".checkbox-secondary": {
-        "@apply border-secondary-400 bg-opacity-0 bg-secondary-400": {},
+        "@apply border-secondary-400 bg-secondary-400": {},
     },
     ".checkbox-success": {
-        "@apply border-success-400 bg-opacity-0 bg-success-400": {},
+        "@apply border-success-400 bg-success-400": {},
     },
     ".checkbox-info": {
-        "@apply border-info-400 bg-opacity-0 bg-info-400": {},
+        "@apply border-info-400 bg-info-400": {},
     },
     ".checkbox-danger": {
-        "@apply border-danger-400 bg-opacity-0 bg-danger-400": {},
+        "@apply border-danger-400 bg-danger-400": {},
     },
     ".checkbox-warning": {
-        "@apply border-warning-400 bg-opacity-0 bg-warning-400": {},
+        "@apply border-warning-400 bg-warning-400": {},
+    },
+    ".checkbox-primary-t": {
+        "@apply border-primary-400": {},
+    },
+    ".checkbox-secondary-t": {
+        "@apply border-secondary-400": {},
+    },
+    ".checkbox-success-t": {
+        "@apply border-success-400": {},
+    },
+    ".checkbox-info-t": {
+        "@apply border-info-400": {},
+    },
+    ".checkbox-danger-t": {
+        "@apply border-danger-400": {},
+    },
+    ".checkbox-warning-t": {
+        "@apply border-warning-400": {},
     },
     //#endregion
     //#region Link themes

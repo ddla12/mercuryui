@@ -45,7 +45,7 @@ module.exports = {
     ".image-card > .image": {
         "@apply flex justify-center": {},
     },
-    ".image-card > .horizontal > .body, .image-card > .horizontal > .image": {
+    ".image-card.horizontal > .body, .image-card.horizontal > .image": {
         "@apply w-1/2": {},
     },
     ".image-card > .body": {

@@ -30,32 +30,33 @@ module.exports = {
     },
     //#region Checkbox
     ".checkbox": {
-        "@apply flex flex-row w-full gap-x-4": {},
+        "@apply flex flex-row w-full gap-x-4 items-center": {},
     },
     ".checkbox > .body": {
-        "@apply border-2 lg:w-8 lg:h-8 w-6 h-6 transition duration-200 ease-in-out text-white relative":
+        "@apply border-2 lg:square-9 square-8 transition-colors duration-200 ease-in-out text-white relative flex items-center justify-center":
+            {},
+    },
+    ".checkbox > .checkbox-default": {
+        "@apply rounded-full shadow-md":
             {},
     },
     ".checkbox > .label": {
-        "@apply text-sm font-extrabold": {},
+        "@apply text-base font-extrabold cursor-default": {},
     },
-    ".checkbox svg": {
-        "@apply z-10 h-5 w-5 lg:h-7 lg:w-7  hidden": {},
+    ".checkbox > .body > svg": {
+        "@apply z-10 hidden transition duration-200 ease-in-out": {},
     },
-    ".checkbox > input[type = 'checkbox']": {
-        "@apply absolute lg:w-8 lg:h-8 w-6 h-6 opacity-0 cursor-pointer": {},
+    ".checkbox > .body > input[type = 'checkbox']": {
+        "@apply absolute lg:square-8 square-6 opacity-0 cursor-pointer z-20": {},
     },
-    ".checkbox > .body > input[type='checkbox']:checked + svg, input[type = 'radio']:checked + svg":
+    "input[type='checkbox']:checked + svg, input[type = 'radio']:checked + svg":
         {
             "@apply block": {},
         },
-    ".color-name": {
-        "@apply text-lg font-semibold my-auto": {},
-    },
     //#endregion
     //#region Toggle
     ".toggle": {
-        "@apply flex items-center justify-center w-full": {},
+        "@apply flex items-center p-1 w-full": {},
     },
     ".toggle > .body": {
         "@apply block relative border-2 bg-gray-200 w-14 h-8 rounded-full": {},
@@ -67,7 +68,7 @@ module.exports = {
         "@apply absolute opacity-0 z-10 w-14 h-8 cursor-pointer": {},
     },
     ".dot": {
-        "@apply absolute top-0.5 left-1 w-6 h-6 rounded-full transition duration-150 ease-out":
+        "@apply absolute top-0.5 left-1 square-6 rounded-full transition duration-150 ease-out":
             {},
     },
     "input[type = 'checkbox']:checked + .dot": {
@@ -77,20 +78,23 @@ module.exports = {
     //#endregion
     //#region Radio
     ".radio": {
-        "@apply flex flex-row gap-x-2": {},
+        "@apply flex flex-row gap-x-2 items-center": {},
     },
     ".radio > .body": {
-        "@apply w-6 h-6 relative rounded-lg border-2 shadow-md": {},
+        "@apply square-6 relative border-2": {},
     },
-    "input[type = 'radio']": {
-        "@apply w-6 h-6 opacity-0 absolute cursor-pointer": {},
+    ".radio > .default": {
+        "@apply rounded-lg shadow-md": {},
+    },
+    "input[type = 'radio'].default": {
+        "@apply square-6 opacity-0 absolute cursor-pointer z-10": {},
     },
     "input[type = 'radio'] + svg": {
-        "@apply absolute w-5 h-5 hidden transition duration-200 ease-in-out":
+        "@apply absolute square-5 hidden transition duration-200 ease-in-out":
             {},
     },
     ".radio > .label": {
-        "@apply text-base select-none": {},
+        "@apply text-base font-semibold select-none": {},
     },
     //#endregion 
 };
