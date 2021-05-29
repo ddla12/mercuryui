@@ -8,7 +8,16 @@
 module.exports = {
     //#region Phone
     ".phone": {
-        "@apply rounded-3xl border-8 f-col w-68 h-100 relative": {},
+        "@apply rounded-3xl border-8 f-col relative": {},
+    },
+    ".phone-md": {
+        "@apply w-60 h-100": {},
+    },
+    ".phone-lg": {
+        "@apply w-68 h-128": {},
+    },
+    ".phone-sm": {
+        "@apply w-48 h-88": {},
     },
     ".phone > .headbar": {
         "@apply absolute w-full top-0 f-row justify-center -mt-2": {},
@@ -17,7 +26,7 @@ module.exports = {
         "@apply rounded-xl w-28 h-6 f-row gap-x-2 justify-center items-center":
             {},
     },
-    "#camera": {
+    ".camera": {
         "@apply h-2 w-2 rounded-full": {},
     },
     //#endregion
@@ -32,13 +41,19 @@ module.exports = {
         "@apply h-72 w-128": {},
     },
     ".window": {
-        "@apply rounded-lg overflow-hidden flex f-col": {},
+        "@apply flex f-col": {},
+    },
+    ".window.default": {
+        "@apply rounded-lg border-2": {},
     },
     ".titlebar": {
         "@apply h-12/1 w-full f-row justify-between items-center text-lg px-3":
             {},
     },
-    ".titlebar > div:last-child": {
+    ".titlebar > .title": {
+        "@apply font-mono": {},
+    },
+    ".titlebar > .control": {
         "@apply f-row gap-x-2 px-1 items-center": {},
     },
     ".window > .body": {

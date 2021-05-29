@@ -17,40 +17,53 @@ module.exports = {
         "@apply z-30": {},
     },
     //#endregion
-    //#region Tabs
-    ".tabs-control": {
-        "@apply -mb-2 h-14 max-w-full overflow-x-auto f-row gap-x-2 pt-1": {},
-    },
-    ".tab-btn": {
-        "@apply z-0 flex-none f-col align-middle text-center px-3 py-2 rounded-lg shadow-lg cursor-pointer":
-            {},
-    },
-    ".tabs-content": {
-        "@apply p-6 z-20 relative font-semibold text-justify rounded-bl-lg rounded-br-lg shadow-lg max-h-96 overflow-y-auto":
-            {},
-    },
-    //#endregion
     //#region Dropdown
-    ".dropdown": {
+    ".dropdown-component": {
+        "@apply relative": {},
+    },
+    ".dropdown, .dropdown-hover": {
         "@apply relative flex items-center justify-between":
             {},
     },
     ".dropdown.dropdown-default": {
         "@apply px-3 font-semibold rounded-lg shadow-lg clickeable": {},
     },
+    ".dropdown-hover.dropdown-default": {
+        "@apply px-3 font-semibold rounded-lg shadow-lg": {},
+    },
+    ".dropdown-component > .dropdown-list": {
+        "@apply hidden": {},
+    },
+    ".dropdown-component:hover > .dropdown-list": {
+        "@apply block": {},
+    },
     ".dropdown-list": {
         "@apply absolute inset-x-0 f-col":
             {},
     },
-    ".dropdown-list-default": {
+    ".dropdown + .dropdown-list-default": {
         "@apply shadow-lg p-4 rounded-md text-black": {},
     },
-    ".dropdown-list.dropdown-top": {
+    ".dropdown-hover + .dropdown-list-default.dropdown-bottom": {
+        "@apply shadow-lg p-4 rounded-b-md text-black": {},
+    },
+    ".dropdown-hover + .dropdown-list-default.dropdown-top": {
+        "@apply shadow-lg p-4 rounded-t-md text-black": {},
+    },
+    ".dropdown + .dropdown-bottom": {
         "@apply top-12":
             {},
     },
-    ".dropdown-list.dropdown-bottom": {
+    ".dropdown + .dropdown-top": {
         "@apply bottom-12":
+            {},
+    },
+    ".dropdown-hover + .dropdown-bottom": {
+        "@apply top-8":
+            {},
+    },
+    ".dropdown-hover + .dropdown-top": {
+        "@apply bottom-8":
             {},
     },
     ".dropdown-list > ul": {
@@ -76,33 +89,38 @@ module.exports = {
     //#endregion
     //#region Collapse
     ".collapse": {
-        "@apply border-2 rounded-lg relative": {},
+        "@apply relative": {},
+    },
+    ".collapse.collapse-default": {
+        "@apply border-2 rounded-lg": {},
     },
     ".collapse > .body": {
-        "@apply relative overflow-hidden transition-all max-h-0 duration-300":
+        "@apply relative overflow-hidden max-h-0":
+            {},
+    },
+    ".collapse > .body.body-default": {
+        "@apply transition-all duration-300":
             {},
     },
     ".collapse > .head": {
-        "@apply w-full p-4 text-left cursor-pointer flex items-center justify-between":
+        "@apply w-full flex items-center justify-between":
+            {},
+    },
+    ".collapse > .head.head-default": {
+        "@apply p-4 text-left cursor-pointer":
             {},
     },
     //#endregion
     //#region Slider
     ".slider": {
-        "@apply relative size-full": {},
-    },
-    ".slider-item": {
-        "@apply size-full flex-none overflow-hidden select-none": {},
-    },
-    ".slider-item img": {
-        "@apply size-full": {},
-    },
-    ".slider-images": {
-        "@apply f-row inset-0 size-full absolute overflow-hidden z-0": {},
+        "@apply relative size-full flex justify-between bg-cover bg-no-repeat bg-center": {},
     },
     ".slider-control": {
-        "@apply absolute inset-y-0 h-full w-12 bg-opacity-25 z-10 f-col items-center":
+        "@apply absolute inset-y-0 h-full z-10":
             {},
+    },
+    ".slider-control-default": {
+        "@apply w-12 bg-opacity-25 f-col items-center": {},
     },
     ".slider-control-left": {
         "@apply slider-control left-0": {},
@@ -110,11 +128,11 @@ module.exports = {
     ".slider-control-right": {
         "@apply slider-control right-0": {},
     },
-    ".slide-button": {
-        "@apply my-auto h-8 w-8 rounded-full p-1 clickeable": {},
+    ".slider-button": {
+        "@apply my-auto square-8 rounded-full p-1 clickeable": {},
     },
-    ".slide-button > svg": {
-        "@apply h-6 w-6 cursor-pointer": {},
+    ".slider-button > svg": {
+        "@apply square-6 cursor-pointer": {},
     },
     //#endregion
 };

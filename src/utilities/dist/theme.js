@@ -160,4 +160,60 @@ module.exports = {
         "@apply text-warning-400 hover:text-warning-500": {},
     },
     //#endregion
+    //#region Dropdown
+    ".dropdown-primary > .dropdown, .dropdown-primary > .dropdown-hover": {
+        "@apply theme-primary": {},
+    },
+    ".dropdown-primary > .dropdown-list": {
+        "@apply bg-gradient-to-r from-primary-400 to-primary-500": {},
+    },
+    ".dropdown-primary > .dropdown-list > ul >.dropdown-item:hover": {
+        "@apply text-black hover:bg-primary-300": {},
+    },
+    ".dropdown-secondary > .dropdown, .dropdown-secondary > .dropdown-hover": {
+        "@apply theme-secondary": {},
+    },
+    ".dropdown-secondary > .dropdown-list": {
+        "@apply bg-gradient-to-r from-secondary-400 to-secondary-500": {},
+    },
+    ".dropdown-secondary > .dropdown-list > ul >.dropdown-item:hover": {
+        "@apply text-black hover:bg-secondary-300": {},
+    },
+    ".dropdown-success > .dropdown, .dropdown-success > .dropdown-hover": {
+        "@apply theme-success": {},
+    },
+    ".dropdown-success > .dropdown-list": {
+        "@apply bg-gradient-to-r from-success-400 to-success-500": {},
+    },
+    ".dropdown-success > .dropdown-list > ul >.dropdown-item:hover": {
+        "@apply text-black hover:bg-success-300": {},
+    },
+    ".dropdown-danger > .dropdown, .dropdown-danger > .dropdown-hover": {
+        "@apply theme-danger": {},
+    },
+    ".dropdown-danger > .dropdown-list": {
+        "@apply bg-gradient-to-r from-danger-400 to-danger-500": {},
+    },
+    ".dropdown-danger > .dropdown-list > ul >.dropdown-item:hover": {
+        "@apply text-black hover:bg-danger-300": {},
+    },
+    ".dropdown-warning > .dropdown, .dropdown-warning > .dropdown-hover": {
+        "@apply theme-warning": {},
+    },
+    ".dropdown-warning > .dropdown-list": {
+        "@apply bg-gradient-to-r from-warning-400 to-warning-500": {},
+    },
+    ".dropdown-warning > .dropdown-list > ul >.dropdown-item:hover": {
+        "@apply text-black hover:bg-warning-300": {},
+    },
+    ".dropdown-info > .dropdown, .dropdown-info > .dropdown-hover": {
+        "@apply theme-info": {},
+    },
+    ".dropdown-info > .dropdown-list": {
+        "@apply bg-gradient-to-r from-info-400 to-info-500": {},
+    },
+    ".dropdown-info > .dropdown-list > ul >.dropdown-item:hover": {
+        "@apply text-black hover:bg-info-300": {},
+    },
+    //#endregion
 };
