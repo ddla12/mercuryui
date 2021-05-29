@@ -1,8 +1,8 @@
 /**
  *
  *  EN:
- *       Utilities module:
- *          When you create a utility sub-module you must add it here.
+ *       Utilities submodule:
+ *          When you create a utility sub-submodule you must add it here.
  *          The property name must be the same as the file.
  *  ES:
  *      Módulo de utilidades:
@@ -12,26 +12,40 @@
  *
  */
 module.exports = {
-    utilities: {
-        typography: require("./dist/typography"),
-        misc: require("./dist/misc"),
-        size: require("./dist/size"),
-        table: require("./dist/table"),
-        theme: require("./dist/theme"),
-        effects: require("./dist/effects"),
-        shortcuts: require("./dist/shortcuts"),
-        inherit: require("./dist/inherit"),
-        hover: require("./dist/hover"),
+    typography: {
+        submodule: require("./dist/typography"),
+        variants: ["responsive", "disabled", "focus", "hover"],
     },
-    variants: {
-        typography: ["responsive", "disabled", "focus", "hover"],
-        misc: [],
-        size: ["responsive", "focus", "hover"],
-        table: [],
-        theme: [],
-        effects: ["responsive", "focus", "hover"],
-        shortcuts: ["responsive"],
-        inherit: [],
-        hover: [],
+    misc: {
+        submodule: require("./dist/misc"),
+        variants: [],
+    },
+    size: {
+        submodule: require("./dist/size"),
+        variants: ["responsive", "focus", "hover"],
+    },
+    table: {
+        submodule: require("./dist/table"),
+        variants: [],
+    },
+    theme: {
+        submodule: require("./dist/theme"),
+        variants: [],
+    },
+    effects: {
+        submodule: require("./dist/effects"),
+        variants: ["responsive", "focus", "hover"],
+    },
+    shortcuts: {
+        submodule: require("./dist/shortcuts"),
+        variants: ["responsive"],
+    },
+    inherit: {
+        submodule: require("./dist/inherit"),
+        variants: [],
+    },
+    hover: {
+        submodule: require("./dist/hover"),
+        variants: [],
     },
 };

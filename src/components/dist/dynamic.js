@@ -32,19 +32,25 @@ module.exports = {
     //#endregion
     //#region Dropdown
     ".dropdown": {
-        "@apply relative f-row items-center justify-between px-3 font-semibold rounded-lg shadow-lg clickeable":
+        "@apply relative flex items-center justify-between":
             {},
+    },
+    ".dropdown.dropdown-default": {
+        "@apply px-3 font-semibold rounded-lg shadow-lg clickeable": {},
     },
     ".dropdown-list": {
-        "@apply absolute inset-x-0 shadow-lg p-4 rounded-md text-black f-col":
+        "@apply absolute inset-x-0 f-col":
             {},
     },
-    ".dropdown-list-top": {
-        "@apply dropdown-list top-12":
+    ".dropdown-list-default": {
+        "@apply shadow-lg p-4 rounded-md text-black": {},
+    },
+    ".dropdown-list.dropdown-top": {
+        "@apply top-12":
             {},
     },
-    ".dropdown-list-bottom": {
-        "@apply dropdown-list bottom-12":
+    ".dropdown-list.dropdown-bottom": {
+        "@apply bottom-12":
             {},
     },
     ".dropdown-list > ul": {
