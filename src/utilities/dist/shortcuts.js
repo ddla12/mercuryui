@@ -13,13 +13,13 @@
 module.exports = {
     //#region Display shortcuts
     ".grid-default": {
-        "@apply grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-3": {},
+        "@apply grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4": {},
     },
     ".f-col": {
-        "@apply flex flex-col gap-1": {},
+        "@apply flex flex-col": {},
     },
     ".f-row": {
-        "@apply flex flex-row gap-1": {},
+        "@apply flex flex-row": {},
     },
     ".-f-col": {
         "@apply flex flex-col-reverse": {},

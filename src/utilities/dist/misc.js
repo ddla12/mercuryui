@@ -76,7 +76,7 @@ module.exports = {
         "@apply ghost border-2 bg-opacity-0 hover:bg-opacity-100": {},
     },
     ".pill": {
-        "@apply text-sm px-3 shadow-sm rounded-full": {},
+        "@apply px-4 rounded-full": {},
     },
     ".disabled": {
         "@apply filter brightness-75": {},

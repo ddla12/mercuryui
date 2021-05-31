@@ -26,7 +26,7 @@ module.exports = {
     ".themed-card > .body > .content": {
         "@apply px-4 py-2 rounded-md w-full": {},
     },
-    ".themed-card > .body > .title": {
+    ".themed-card > .body > .head": {
         "@apply pl-3 w-full": {},
     },
     ".themed-card > .body > .footer": {

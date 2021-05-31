@@ -31,10 +31,7 @@ module.exports = {
     //#endregion
     //#region Badge
     ".badge": {
-        "@apply text-sm px-2": {},
-    },
-    ".badge-default": {
-        "@apply shadow-sm rounded-md font-semibold": {},
+        "@apply shadow-sm rounded-md": {},
     },
     ".badge-component": {
         "@apply f-row my-auto select-none": {},
