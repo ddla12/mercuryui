@@ -5,11 +5,14 @@
  *      Sub-módulo de cartas
  */
 module.exports = {
+    ".card-lg": {
+        "@apply rounded-md p-8 elevation-md": {},
+    },
+    ".card-md": {
+        "@apply rounded-lg p-6 elevation-sm": {},
+    },
     ".card, .themed-card": {
         "@apply p-4 rounded-md shadow-md": {},
-    },
-    ".card-border": {
-        "@apply border-2": {},
     },
     ".card > .head": {
         "@apply p-2 w-full": {},
@@ -34,10 +37,10 @@ module.exports = {
     },
     //#region Image Card
     ".image-card": {
-        "@apply rounded-md shadow-md overflow-hidden size-full gap-3": {},
+        "@apply overflow-hidden size-full gap-3": {},
     },
     ".image-card.horizontal": {
-        "@apply f-row": {},
+        "@apply f-col md:f-row": {},
     },
     ".image-card.vertical": {
         "@apply f-col": {},
@@ -45,8 +48,11 @@ module.exports = {
     ".image-card > .image": {
         "@apply flex justify-center": {},
     },
-    ".image-card.horizontal > .body, .image-card.horizontal > .image": {
-        "@apply w-1/2": {},
+    ".image-card.horizontal * ": {
+        "@apply h-1/2 md:w-1/2": {},
+    },
+    ".image-card.vertical * ": {
+        "@apply h-1/2": {},
     },
     ".image-card > .body": {
         "@apply f-col gap-y-0.5 p-2 max-h-full place-content-center": {},

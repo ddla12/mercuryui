@@ -36,5 +36,8 @@ module.exports = {
     ".badge-component": {
         "@apply f-row my-auto select-none": {},
     },
+    ".badge-default": {
+        "@apply px-4 font-bold": {},
+    }
     //#endregion
 };

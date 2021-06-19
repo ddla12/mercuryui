@@ -161,7 +161,7 @@ module.exports = {
     },
     //#endregion
     //#region Dropdown
-    ".dropdown-primary > .dropdown, .dropdown-primary > .dropdown-hover": {
+    ".dropdown-primary > div:first-child": {
         "@apply theme-primary": {},
     },
     ".dropdown-primary > .dropdown-list": {
@@ -170,7 +170,7 @@ module.exports = {
     ".dropdown-primary > .dropdown-list > ul >.dropdown-item:hover": {
         "@apply text-black hover:bg-primary-300": {},
     },
-    ".dropdown-secondary > .dropdown, .dropdown-secondary > .dropdown-hover": {
+    ".dropdown-secondary > div:first-child": {
         "@apply theme-secondary": {},
     },
     ".dropdown-secondary > .dropdown-list": {
@@ -179,7 +179,7 @@ module.exports = {
     ".dropdown-secondary > .dropdown-list > ul >.dropdown-item:hover": {
         "@apply text-black hover:bg-secondary-300": {},
     },
-    ".dropdown-success > .dropdown, .dropdown-success > .dropdown-hover": {
+    ".dropdown-success > div:first-child": {
         "@apply theme-success": {},
     },
     ".dropdown-success > .dropdown-list": {
@@ -188,7 +188,7 @@ module.exports = {
     ".dropdown-success > .dropdown-list > ul >.dropdown-item:hover": {
         "@apply text-black hover:bg-success-300": {},
     },
-    ".dropdown-danger > .dropdown, .dropdown-danger > .dropdown-hover": {
+    ".dropdown-danger > div:first-child": {
         "@apply theme-danger": {},
     },
     ".dropdown-danger > .dropdown-list": {
@@ -197,7 +197,7 @@ module.exports = {
     ".dropdown-danger > .dropdown-list > ul >.dropdown-item:hover": {
         "@apply text-black hover:bg-danger-300": {},
     },
-    ".dropdown-warning > .dropdown, .dropdown-warning > .dropdown-hover": {
+    ".dropdown-warning > div:first-child": {
         "@apply theme-warning": {},
     },
     ".dropdown-warning > .dropdown-list": {
@@ -206,7 +206,7 @@ module.exports = {
     ".dropdown-warning > .dropdown-list > ul >.dropdown-item:hover": {
         "@apply text-black hover:bg-warning-300": {},
     },
-    ".dropdown-info > .dropdown, .dropdown-info > .dropdown-hover": {
+    ".dropdown-info > div:first-child": {
         "@apply theme-info": {},
     },
     ".dropdown-info > .dropdown-list": {

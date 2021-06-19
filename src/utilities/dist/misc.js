@@ -85,14 +85,63 @@ module.exports = {
         "@apply filter active:brightness-90 transition-transform transform active:scale-110 focus:outline-none cursor-pointer":
             {},
     },
+    ".clickeable-shrink": {
+        "@apply filter active:brightness-90 transition-transform transform active:scale-90 focus:outline-none cursor-pointer":
+            {},
+    },
     ".image-fill": {
         "@apply object-fill size-full": {},
     },
     ".flippable-icon": {
-        "@apply square-6 transform duration-150 ease-in-out": {},
+        "@apply square-6 transition-transform transform duration-150 ease-in-out": {},
     },
     ".loading": {
         "@apply animate-pulse p-2 middle-center cursor-wait": {},
+    },
+    ".copyable": {
+        "@apply clickeable select-all": {},
+    },
+    //#endregion
+    //#region Gradients animations
+    ".animate-gradient-x": {
+        animation: "gradient-x 10s ease-in-out infinite",
+    },
+    ".animate-gradient-y": {
+        animation: "gradient-y 10s ease-in-out infinite",
+    },
+    ".animate-gradient-xy": {
+        animation: "gradient-xy 10s ease-in-out infinite",
+    },
+    "@keyframes gradient-y": {
+        "0%, 100%": {
+            "background-size": "400% 400%",
+            "background-position": "center top",
+        },
+        "50%": {
+            "background-size": "200% 200%",
+            "background-position": "center center",
+        }
+    },
+    
+    "@keyframes gradient-x": {
+        "0%, 100%": {
+            "background-size": "200% 200%",
+            "background-position": "left center",
+        },
+        "50%": {
+            "background-size": "200% 200%",
+            "background-position": "right center",
+        }
+    },
+    "@keyframes gradient-xy": {
+        "0%, 100%": {
+            "background-size": "400% 400%",
+            "background-position": "left top",
+        },
+        "50%": {
+            "background-size": "200% 200%",
+            "background-position": "right center",
+        }
     },
     //#endregion
 };

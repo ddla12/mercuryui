@@ -8,7 +8,7 @@
  *          Componentes que necesitan lógica para su función
  */
 module.exports = {
-    //#region Modal
+    //#region Modal     
     ".modal-dialog": {
         "@apply z-20 fixed top-0 left-0 flex items-center justify-center size-screen bg-black bg-opacity-50":
             {},
@@ -34,7 +34,7 @@ module.exports = {
     ".dropdown-component > .dropdown-list": {
         "@apply hidden": {},
     },
-    ".dropdown-component:hover > .dropdown-list": {
+    ".dropdown-hover:hover + .dropdown-list": {
         "@apply block": {},
     },
     ".dropdown-list": {

@@ -13,7 +13,7 @@ module.exports = {
         "@apply text-3xl xl:text-4xl 2xl:text-5xl": {},
     },
     ".title-lg": {
-        "@apply text-7xl xl:text-8xl 2xl:text-9xl": {},
+        "@apply text-6xl xl:text-7xl 2xl:text-8xl": {},
     },
     ".title-sm": {
         "@apply text-2xl xl:text-3xl 2xl:text-4xl": {},
