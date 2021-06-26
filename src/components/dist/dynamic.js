@@ -31,10 +31,10 @@ module.exports = {
     ".dropdown-hover.dropdown-default": {
         "@apply px-3 font-semibold rounded-lg shadow-lg": {},
     },
-    ".dropdown-component > .dropdown-list": {
+    ".dropdown-component > .dropdown-hover + .dropdown-list": {
         "@apply hidden": {},
     },
-    ".dropdown-hover:hover + .dropdown-list": {
+    ".dropdown-component:hover > .dropdown-hover + .dropdown-list": {
         "@apply block": {},
     },
     ".dropdown-list": {

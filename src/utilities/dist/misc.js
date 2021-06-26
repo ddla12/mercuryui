@@ -101,6 +101,12 @@ module.exports = {
     ".copyable": {
         "@apply clickeable select-all": {},
     },
+    ".flip-y": {
+        transform: 'scaleY(-1)',
+    },
+    ".flip-x": {
+        transform: 'scaleX(-1)',
+    },
     //#endregion
     //#region Gradients animations
     ".animate-gradient-x": {

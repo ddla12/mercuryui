@@ -43,14 +43,14 @@ module.exports = {
     ".window": {
         "@apply flex f-col": {},
     },
-    ".window.default": {
+    ".window-default": {
         "@apply rounded-lg border-2": {},
     },
     ".titlebar": {
         "@apply h-12/1 w-full f-row justify-between items-center text-lg px-3":
             {},
     },
-    ".titlebar > .title": {
+    ".titlebar > .window-title": {
         "@apply font-mono": {},
     },
     ".titlebar > .control": {

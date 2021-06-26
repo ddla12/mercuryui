@@ -48,10 +48,10 @@ module.exports = {
     ".image-card > .image": {
         "@apply flex justify-center": {},
     },
-    ".image-card.horizontal * ": {
+    ".image-card.horizontal > div": {
         "@apply h-1/2 md:w-1/2": {},
     },
-    ".image-card.vertical * ": {
+    ".image-card.vertical > div": {
         "@apply h-1/2": {},
     },
     ".image-card > .body": {

@@ -1,6 +1,6 @@
 {
     "name": "@darudlingilien/mercuryui",
-    "version": "1.1.5",
+    "version": "1.1.6",
     "description": "A plugin for Tailwind CSS, based on component utilities",
     "main": "index.js",
     "scripts": {
