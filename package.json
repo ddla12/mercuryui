@@ -1,6 +1,6 @@
 {
     "name": "@darudlingilien/mercuryui",
-    "version": "1.1.6",
+    "version": "1.1.7",
     "description": "A plugin for Tailwind CSS, based on component utilities",
     "main": "index.js",
     "scripts": {
@@ -16,12 +16,12 @@
     },
     "homepage": "https://github.com/ddla12/mercuryui#readme",
     "devDependencies": {
-        "autoprefixer": "^10.0.2",
-        "eslint": "^7.27.0",
+        "autoprefixer": "^10.2.6",
+        "eslint": "^7.29.0",
         "lodash": "^4.17.21",
-        "postcss": "^8.1.10",
-        "prettier": "^2.3.0",
-        "tailwindcss": "^2.0.1"
+        "postcss": "^8.3.5",
+        "prettier": "^2.3.2",
+        "tailwindcss": "^2.2.4"
     },
     "keywords": [
         "tailwindcss",

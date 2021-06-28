@@ -72,27 +72,27 @@ module.exports = {
      *  Input themes / Temas de inputs
      */
     ".input-primary": {
-        "@apply border-primary-400 focus:ring-primary-500 placeholder-primary-400":
+        "@apply text-gray-900 border-primary-500 focus:ring-primary-400 placeholder-primary-400 placeholder-opacity-95":
             {},
     },
     ".input-secondary": {
-        "@apply border-secondary-400 focus:ring-secondary-500 placeholder-secondary-400":
+        "@apply text-gray-900 border-secondary-500 focus:ring-secondary-400 placeholder-secondary-400 placeholder-opacity-95":
             {},
     },
     ".input-danger": {
-        "@apply border-danger-400 focus:ring-danger-500 placeholder-danger-400":
+        "@apply text-gray-900 border-danger-500 focus:ring-danger-400 placeholder-danger-400 placeholder-opacity-95":
             {},
     },
     ".input-success": {
-        "@apply border-success-400 focus:ring-success-500 placeholder-success-400":
+        "@apply text-gray-900 border-success-500 focus:ring-success-400 placeholder-success-400 placeholder-opacity-95":
             {},
     },
     ".input-warning": {
-        "@apply border-warning-400 focus:ring-warning-500 placeholder-warning-400":
+        "@apply text-gray-900 border-warning-500 focus:ring-warning-400 placeholder-warning-400 placeholder-opacity-95":
             {},
     },
     ".input-info": {
-        "@apply border-info-400 focus:ring-info-500 placeholder-info-400": {},
+        "@apply text-gray-900 border-info-500 focus:ring-info-400 placeholder-info-400 placeholder-opacity-95": {},
     },
     ".checkbox-primary": {
         "@apply border-primary-400 bg-primary-400": {},

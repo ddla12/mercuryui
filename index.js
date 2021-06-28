@@ -48,7 +48,7 @@ module.exports = plugin.withOptions(
                         primary: colors.rose,
                         secondary: colors.fuchsia,
                         warning: colors.amber,
-                        info: colors.lightBlue,
+                        info: colors.sky,
                         danger: colors.red,
                         success: colors.green,
                         darkWhite: colors.warmGray,
