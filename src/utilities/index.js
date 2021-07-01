@@ -40,10 +40,6 @@ module.exports = {
         submodule: require("./dist/shortcuts"),
         variants: ["responsive"],
     },
-    inherit: {
-        submodule: require("./dist/inherit"),
-        variants: [],
-    },
     hover: {
         submodule: require("./dist/hover"),
         variants: [],

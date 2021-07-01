@@ -1,5 +1,5 @@
 /**
- * 
+ *
  *  EN:
  *      Typography sub-module:
  *          Only utilities for text
@@ -10,34 +10,76 @@
  */
 module.exports = {
     ".title": {
-        "@apply text-3xl xl:text-4xl 2xl:text-5xl": {},
+        "font-size": "3.25rem",
+        "line-height": "3.75rem",
     },
-    ".title-lg": {
-        "@apply text-6xl xl:text-7xl 2xl:text-8xl": {},
-    },
-    ".title-sm": {
-        "@apply text-2xl xl:text-3xl 2xl:text-4xl": {},
-    },
+
     ".subtitle": {
-        "@apply text-lg xl:text-xl 2xl:text-2xl": {},
+        "font-size": "1.5rem",
+        "line-height": "2rem",
     },
+
+    ".title-sm": {
+        "font-size": "2.5rem",
+        "line-height": "2.75rem",
+    },
+
+    ".subtitle-sm": {
+        "font-size": "1rem",
+        "line-height": "1.5rem",
+    },
+
+    ".title-md": {
+        "font-size": "5rem",
+        "line-height": "5.5rem",
+    },
+
+    ".subtitle-md": {
+        "font-size": "2rem",
+        "line-height": "2.5rem",
+    },
+
+    ".title-lg": {
+        "font-size": "7.5rem",
+        "line-height": "8.35rem",
+    },
+
     ".subtitle-lg": {
-        "@apply text-4xl xl:text-5xl 2xl:text-6xl": {},
+        "font-size": "3rem",
+        "line-height": "3.85rem",
     },
-    ".subtitle-sm, .text-responsive": {
+
+    ".title-xl": {
+        "font-size": "10rem",
+        "line-height": "11.5rem",
+    },
+
+    ".subtitle-xl": {
+        "font-size": "4rem",
+        "line-height": "5rem",
+    },
+
+    ".title-2xl": {
+        "font-size": "12.5rem",
+        "line-height": "14rem",
+    },
+
+    ".subtitle-2xl": {
+        "font-size": "5rem",
+        "line-height": "6rem",
+    },
+    ".text-responsive": {
         "@apply text-base xl:text-lg 2xl:text-xl": {},
     },
     /**
      *  Basic text utilities / Utilidades básicas de texto
      */
     ".link": {
-        "@apply font-semibold no-underline transition-colors inline-flex duration-200": {},
+        "@apply font-semibold no-underline transition-colors inline-flex duration-200":
+            {},
     },
     ".quote": {
         "@apply italic font-light tracking-wide": {},
-    },
-    ".p": {
-        "@apply text-base font-normal tracking-normal": {},
     },
     /**
      *  Filters / Filtros

@@ -18,9 +18,6 @@ module.exports = {
     },
     //#endregion
     //#region Dropdown
-    ".dropdown-component": {
-        "@apply relative": {},
-    },
     ".dropdown, .dropdown-hover": {
         "@apply relative flex items-center justify-between":
             {},
@@ -38,7 +35,7 @@ module.exports = {
         "@apply block": {},
     },
     ".dropdown-list": {
-        "@apply absolute inset-x-0 f-col":
+        "@apply absolute inset-x-0 f-col z-20":
             {},
     },
     ".dropdown + .dropdown-list-default": {
@@ -88,7 +85,7 @@ module.exports = {
     },
     //#endregion
     //#region Collapse
-    ".collapse": {
+    ".collapse, .dropdown-component": {
         "@apply relative": {},
     },
     ".collapse.collapse-default": {

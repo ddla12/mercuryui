@@ -24,10 +24,10 @@ module.exports = {
         "@apply transform transition duration-150 hover:translate-y-6": {},
     },
     ".hover-dark": {
-        "@apply transform transition duration-150 filter hover:brightness-90": {},
+        "@apply transform transition duration-150 filter hover:brightness-75": {},
     },
     ".hover-light": {
-        "@apply transform transition duration-150 filter hover:brightness-110": {},
+        "@apply transform transition duration-150 filter hover:brightness-125": {},
     },
     ".hover-skew-up": {
         "@apply transform transition duration-150 hover:-skew-y-6": {},
@@ -40,11 +40,5 @@ module.exports = {
     },
     ".hover-skew-right": {
         "@apply transform transition duration-150 hover:skew-x-6": {},
-    },
-    ".hover-rotate-left": {
-        "@apply transform transition duration-150 hover:-rotate-6": {},
-    },
-    ".hover-rotate-right": {
-        "@apply transform transition duration-150 hover:rotate-6": {},
     },
 };

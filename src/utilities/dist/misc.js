@@ -3,7 +3,7 @@
  *  Estas utilidades son necesarias para el funcionamiento del plugin
  */
 module.exports = {
-    ".has-tooltip, .has-popover": {
+    ".has-tooltip": {
         "@apply relative f-col items-center group": {},
     },
     //#region Z-index utilities
@@ -106,6 +106,9 @@ module.exports = {
     },
     ".flip-x": {
         transform: 'scaleX(-1)',
+    },
+    ".bg-inherit": {
+        "background-color": "inherit",
     },
     //#endregion
     //#region Gradients animations

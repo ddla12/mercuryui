@@ -16,9 +16,6 @@ module.exports = {
     ".button-default": {
         "@apply font-bold rounded-md clickeable": {},
     },
-    ".button > .body, .badge > .body": {
-        "@apply f-row gap-x-2 mx-auto justify-center flex-nowrap relative": {},
-    },
     ".button-sm": {
         "@apply px-3 py-1 text-sm": {},
     },
