@@ -30,6 +30,6 @@ plugins: [
 ##### La clase `button` aplica la clase `clickeable`, que puede ser aplicada a cualquier elemento, además de ofrecer lo necesario para elaborar un botón.
 ------------
 
-#### Ese es un pequeño ejemplo de lo que puede hacer con MercuryUI, para más información visite [el sitio oficial.](http://mercuryui.caribesistemas.com "el sitio oficial.")
+#### Ese es un pequeño ejemplo de lo que puede hacer con MercuryUI, para más información visite [el sitio oficial.](https://mercuryui.netlify.app/ "el sitio oficial.")
 
 <span style="color: red; font-weight: bold;font-size: 24px;">Advertencia: MercuryUI está en fase beta, y el sitio oficial está bajo mantenimiento por los momentos.</span>
