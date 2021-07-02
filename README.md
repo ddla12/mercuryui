@@ -18,9 +18,7 @@ plugins: [
    <div class="w-24">
       <div class="button-component">
          <button class="button button-md button-default theme-primary">
-             <div class="body">
                 Lorem ipsum
-              </div>
           </button>
       </div>
    </div>
